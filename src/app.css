@@ -1,0 +1,35 @@
+body{
+    background-color: cornflowerblue;
+}
+
+
+
+.Weather{
+    background-image: url("https://cdn.hswstatic.com/gif/why-is-sky-blue.jpg");
+    color: white;
+    width: 65em;
+    height: 30em;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    padding: 2rem;
+    margin-top: 5em;
+    border-radius: 10px;
+}
+
+.temp{
+    margin: auto;
+    width: 10em;
+    height: 5em;
+    background-color: aliceblue;
+    text-align: center;
+    color: blue;
+    opacity: 0.8;
+    border-radius: 1rem;
+    font-size: 2rem;
+    
+}
+
+.temp h1{
+    padding: 2rem;
+}
