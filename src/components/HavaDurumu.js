@@ -5,6 +5,7 @@ const HavaDurumu = (props) => {
     var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
     var today  = new Date();
 
+ 
 
     const capitalizeFirst = str => {
         return str.charAt(0).toUpperCase() + str.slice(1);
@@ -22,7 +23,7 @@ const HavaDurumu = (props) => {
         <div className="temp">
             <h2>{(weather.main.temp-273).toFixed(0)} °C</h2>
         </div>
-        <h3>{capitalizeFirst(weather.weather.map((data)=>data.description).join(","))}</h3>
+        <h3 >{capitalizeFirst(weather.weather.map((data)=>data.description).join(","))}</h3>
         
 
         </div>

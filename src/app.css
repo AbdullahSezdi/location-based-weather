@@ -16,6 +16,24 @@ body{
     margin-top: 5em;
     border-radius: 10px;
 }
+.rain{
+    background-image: url("https://t4.ftcdn.net/jpg/03/46/14/45/360_F_346144571_ueCbcbOYs6XR17CaeG48KoDKiffR7d3s.jpg");
+    color: white;
+    width: 65em;
+    height: 30em;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    padding: 2rem;
+    margin-top: 5em;
+    border-radius: 10px;
+}
+
+
+
+
+
+
 .Weather h1{
     color: Black;
     font-family: 'Permanent Marker', cursive;
@@ -56,5 +74,16 @@ body{
     color: black;
     font-size: 20px;
 
-
 }
+
+
+#myInput {
+
+    background-position: 10px 12px; /* Position the search icon */
+    background-repeat: no-repeat; /* Do not repeat the icon image */
+    width: 100%; /* Full-width */
+    font-size: 16px; /* Increase font-size */
+    padding: 12px 20px 12px 40px; /* Add some padding */
+    border: 1px solid #ddd; /* Add a grey border */
+    margin-bottom: 12px; /* Add some space below the input */
+  }

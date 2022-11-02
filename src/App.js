@@ -5,6 +5,7 @@ import HavaDurumu from "./components/HavaDurumu";
 import "./app.css"
 
 
+
 //https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}
 
 
@@ -33,6 +34,8 @@ function App() {
 
   return (
     <div className="App">
+
+    <input type="text" id="myInput" placeholder="Search the city"></input>
     <HavaDurumu weather={weather}></HavaDurumu>
      
     </div>
