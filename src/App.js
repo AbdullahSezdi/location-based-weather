@@ -35,7 +35,7 @@ function App() {
   return (
     <div className="App">
 
-    <input type="text" id="myInput" placeholder="Search the city"></input>
+    
     <HavaDurumu weather={weather}></HavaDurumu>
      
     </div>
