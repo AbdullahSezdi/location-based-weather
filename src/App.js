@@ -6,8 +6,6 @@ import "./app.css"
 
 
 
-//https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}
-
 
 function App() {
 
@@ -25,6 +23,15 @@ function App() {
     
   };
 
+  const onFormSubmit = (e) => {
+    const key=process.env.REACT_APP_WEATHER_API_KEY;
+    var lowerCase = e.target.value.toLowerCase();
+    weather = axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${lowerCase}&appid=${key}`)
+    setWeather(weather)
+    console.log("......")
+    console.log(weather)
+  };
+
   useEffect(()=>{ 
     latitude && longitude && getWeather(latitude,longitude)
   },[latitude,longitude])
@@ -35,7 +42,11 @@ function App() {
   return (
     <div className="App">
 
-    
+        <form className="form-input" onSubmit={onFormSubmit}>
+           <input type="search" id="myInput" className="inputLabel" cplaceholder="Search the city"></input>
+            <button type="submit">Search</button>
+
+        </form>
     
     <HavaDurumu weather={weather}></HavaDurumu>
      
