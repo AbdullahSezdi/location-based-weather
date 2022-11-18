@@ -16,19 +16,6 @@ body{
     margin-top: 5em;
     border-radius: 10px;
 }
-.rain{
-    background-image: url("https://t4.ftcdn.net/jpg/03/46/14/45/360_F_346144571_ueCbcbOYs6XR17CaeG48KoDKiffR7d3s.jpg");
-    color: white;
-    width: 65em;
-    height: 30em;
-    margin: auto;
-    text-align: center;
-    align-items: center;
-    padding: 2rem;
-    margin-top: 5em;
-    border-radius: 10px;
-}
-
 
 
 .Weather span{
@@ -95,10 +82,12 @@ body{
     border-radius: 10px;
   }
 
-  .search-bar{
+ 
+
+  .form-input{
     display: flex;
     margin: auto;
     justify-content: center;
-    width: 80%;
+    width: 60%;
 
   }

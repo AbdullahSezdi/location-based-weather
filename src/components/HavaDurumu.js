@@ -10,11 +10,11 @@ const HavaDurumu = (props) => {
     const [inputText, setInputText] = useState("");
     const key = process.env.REACT_APP_WEATHER_API_KEY;
 
-    let inputHandler = (e) => {
-        //convert input text to lower case
+    const onFormSubmit = (e) => {
         var lowerCase = e.target.value.toLowerCase();
         setInputText(lowerCase);
-        weather= axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${inputText}&appid=${key}`)
+        weather = axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${inputText}&appid=${key}`)
+        console.log("......")
         console.log(weather)
       };
 
@@ -29,8 +29,12 @@ const HavaDurumu = (props) => {
 
     return <div className="Weather"> 
         <div className="search-bar">
-        <span><AiOutlineSearch /></span>
-        <input type="search" id="myInput" onSubmit={inputHandler} placeholder="Search the city"></input>
+          <form className="form-input" onSubmit={onFormSubmit}>
+           <input type="search" id="myInput" className="inputLabel" cplaceholder="Search the city"></input>
+            <button type="submit">Search</button>
+
+        </form>
+    
        
         </div>
         

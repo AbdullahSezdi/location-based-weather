@@ -36,6 +36,7 @@ function App() {
     <div className="App">
 
     
+    
     <HavaDurumu weather={weather}></HavaDurumu>
      
     </div>
